@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaaS on IoT</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<div class="w3-container">
+	<h1>FaaS on IoT</h1>
+
+	<br>
+	<form style="width:20%;" class="w3-container" id="upload-form" enctype="multipart/form-data">
+		<label class="w3-text-black">Select application archive:</label>
+		<input class="w3-input w3-border" type="file" name="file">
+		<br>
+		<input class="w3-btn w3-green" type="submit" value="Upload">
+	</form>
+	</div>
+	<div id="createResponse"></div>
+	<div class="w3-container">
+	<h4 id="newAppName"></h4>
+	<table id="newAppStatus" class="w3-card" style="width:40%;">
+	</table>
+	</div>
+	<div id="getResponse"></div>
+	<br><br>
+	<div style="width:50%;margin: 0 auto;"><!--</div>style="width:30%;margin:auto;">-->
+	<button onclick="showHistory('statusTable')" class="w3-btn w3-block w3-black">All applications</button>
+	<br>
+	<table id="statusTable" class="w3-hide w3-table w3-table-all w3-card" style="margin: 0 auto;width:70%;">
+		<thead>
+		  <tr>
+			<th>App Name</th>
+			<th>Overall status</th>
+			<th>Deployment status</th>
+		  </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	</div>
+</body>
+	<script src="upload.js"></script>
+</html>

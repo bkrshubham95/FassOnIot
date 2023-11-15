@@ -1,0 +1,1 @@
+# Directory for the non-IoT components of the project

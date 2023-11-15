@@ -1,0 +1,4 @@
+[submodule "core/data_xchange/Thirdparty/pybind11"]
+	path = core/data_xchange/Thirdparty/pybind11
+	url = https://github.com/pybind/pybind11.git
+	branch = stable

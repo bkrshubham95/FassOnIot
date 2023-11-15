@@ -1,0 +1,17 @@
+{
+  "Name": "Demo_app",
+  "Version": "1.0.0",
+  "Resources": {
+    "Subs_Topic": ["get_roots"],
+    "Pubs_Topic": ["compute_coefficients"]
+  },
+  "Runtime_Environment": "venv",
+  "Required_Platform": "Linux",
+  "Run_Containerized": "False",
+  "Run_Commands": {
+    "Mode": "1",
+    "Exec_Commands": ["pip3 install -r requirements.txt", "python3 demo_code/client.py"],
+    "Wait_For_Exit": "True"
+  },
+  "Dependencies": "requirements.txt"
+}
